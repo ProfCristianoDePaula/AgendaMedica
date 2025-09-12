@@ -17,9 +17,5 @@ namespace AgendaMedica.Models
         public string CEP { get; set; }
         public string Prontuario { get; set; }
         public string Email { get; set; }
-
-        // Vincular a Identidade ao Paciente (IdentityUser)
-        public string? UserId { get; set; } // Chave Estrangeira
-        public IdentityUser? IdentityUser { get; set; } // Objeto de Identidade de Usuario
     }
 }
