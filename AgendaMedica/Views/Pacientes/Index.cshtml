@@ -15,7 +15,7 @@
         <thead>
             <tr>
                 <th class="bg-black">
-                    @Html.DisplayNameFor(model => model.Prontuario)
+                    Prontuário
                 </th>
                 <th class="bg-black">
                     @Html.DisplayNameFor(model => model.Nome)
@@ -24,15 +24,17 @@
                     @Html.DisplayNameFor(model => model.CPF)
                 </th>
                 <th class="bg-black">
-                    @Html.DisplayNameFor(model => model.DataNasc)
+                    Data Nascimento
                 </th>
                 <th class="bg-black">
                     @Html.DisplayNameFor(model => model.Celular)
                 </th>
                 <th class="bg-black">
-                    @Html.DisplayNameFor(model => model.Email)
+                    E-mail
                 </th>
-                <th class="bg-black"></th>
+                <th class="bg-black">
+                    Ações
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -58,7 +60,7 @@
                         @Html.DisplayFor(modelItem => item.Email)
                     </td>
                     <td>
-                        <a class="btn btn-outline-light btn-sm me-3" asp-action="Edit" asp-route-id="@item.PacienteId"><i class="bi bi-pencil-square"></i> Editar</a>
+                        <a class="btn btn-outline-light btn-sm me-2" asp-action="Edit" asp-route-id="@item.PacienteId"><i class="bi bi-pencil-square"></i> Editar</a>
                         <a class="btn btn-outline-light btn-sm" asp-action="Delete" asp-route-id="@item.PacienteId"><i class="bi bi-x-square"></i> Excluir</a>
                     </td>
                 </tr>
